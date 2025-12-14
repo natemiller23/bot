@@ -1,0 +1,60 @@
+{
+  "name": "real-money-earning-dashboard",
+  "version": "1.0.0",
+  "description": "Real money earning dashboard with actual payment processing and affiliate tracking",
+  "main": "production-server.js",
+  "scripts": {
+    "start": "node production-server.js",
+    "dev": "nodemon production-server.js",
+    "deploy": "npm run build && npm start",
+    "build": "echo 'Build completed'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "affiliate",
+    "earning",
+    "payment",
+    "stripe",
+    "paypal",
+    "crypto",
+    "bot",
+    "ebay",
+    "clickbank"
+  ],
+  "author": "Real Money Earning System",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "socket.io": "^4.5.0",
+    "stripe": "^12.0.0",
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "node-fetch": "^2.6.7",
+    "dotenv": "^16.0.3",
+    "twitter-api-v2": "^1.15.0",
+    "facebook-nodejs-business-sdk": "^18.0.3",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/real-money-earning-dashboard.git"
+  },
+  "homepage": "https://yourdomain.com",
+  "bugs": {
+    "url": "https://github.com/yourusername/real-money-earning-dashboard/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

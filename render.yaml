@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: real-earning-dashboard
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: EBAY_APP_ID
+        fromSecret: EBAY_APP_ID
+      - key: EBAY_DEV_ID
+        fromSecret: EBAY_DEV_ID
+      - key: EBAY_CERT_ID
+        fromSecret: EBAY_CERT_ID
+      - key: STRIPE_SECRET_KEY
+        fromSecret: STRIPE_SECRET_KEY
+      - key: PAYPAL_CLIENT_ID
+        fromSecret: PAYPAL_CLIENT_ID
+      - key: PAYPAL_CLIENT_SECRET
+        fromSecret: PAYPAL_CLIENT_SECRET
